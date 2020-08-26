@@ -1,0 +1,658 @@
+@import "https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap";
+@keyframes aparecer {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes slidein {
+	from {
+		margin-right: 400%;
+		width: 200%;
+	}
+	to {
+		margin-left: 0%;
+		width: 100%;
+	}
+}
+@keyframes tituloservicios {
+	20%,50%,80%,to {
+		transform: translateY(0);
+	}
+	40% {
+		transform: translateY(-30px);
+	}
+	70% {
+		transform: translateY(-15px);
+	}
+	90% {
+		transform: translateY(-4px);
+	}
+}
+@keyframes slidetexto {
+	from {
+		margin-left: 200%;
+	}
+	to {
+		margin-right: 550px;
+	}
+}
+@keyframes textocontacto {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes novedades {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes logofooter {
+	20%,50%,80%,to {
+		transform: translateY(0);
+	}
+	40% {
+		transform: translateY(-30px);
+	}
+	70% {
+		transform: translateY(-15px);
+	}
+	90% {
+		transform: translateY(-4px);
+	}
+}
+#cuerpo {
+	background-color: black;
+	font-family: 'Poppins', sans-serif;
+	margin: 0px;
+}
+img {
+	max-width: 100%;
+}
+nav {
+	background-color: black;
+	position: fixed;
+	width: 100%;
+	top: 0px;
+}
+.titularPresentacion {
+	h2 {
+		animation: 2s;
+		animation-name: aparecer;
+		animation-iteration-count: infinite;
+		animation-direction: alternate;
+	}
+	text-align: center;
+	font-size: 24px;
+}
+#menu {
+	ul {
+		list-style: none;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		flex-wrap: nowrap;
+		align-items: center;
+		padding-right: 20px;
+		padding-left: 20px;
+	}
+	#item {
+		a {
+			background: black;
+			color: white;
+			padding: 15px 60px;
+			display: block;
+			text-decoration: none;
+			font-size: 14px;
+			&:hover {
+				background: linear-gradient(to right, #FC3AFC, #fac5be);
+			}
+		}
+		&:hover {
+			#desple {
+				display: block;
+				font-size: 10px;
+			}
+		}
+	}
+	#desple {
+		display: none;
+		position: absolute;
+		padding: 0px;
+		font-size: 10px;
+	}
+}
+#itemLogo {
+	width: 250px;
+}
+.menuHamburguesa {
+	display: none;
+}
+#fondo {
+	background-image: url('../multimedia/background1.jpeg');
+	background-size: cover;
+	height: 750px;
+}
+.tituloYtexto {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-end;
+	flex-wrap: nowrap;
+	overflow: hidden;
+	max-height: 95%;
+	max-width: 95%;
+}
+.titularFondo {
+	font-weight: bold;
+	padding-right: 100px;
+	padding-top: 100px;
+	font-size: 30px;
+	text-align: right;
+	color: white;
+	a {
+		text-decoration: none;
+		color: white;
+		transition: font-size 1s, color 1s;
+		&:hover {
+			font-size: 34px;
+			color: fuchsia;
+		}
+	}
+}
+.textoFondo {
+	p {
+		font-size: 30px;
+		text-align: right;
+		margin-left: 600px;
+		color: white;
+	}
+	animation-duration: 2s;
+	animation-name: slidein;
+	width: 100%;
+}
+#hola {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-basis: 200px;
+	padding-right: 50px;
+}
+.presentacion {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-left: 50px;
+}
+.botonVermas {
+	text-align: center;
+	input {
+		font-family: 'Poppins', sans-serif;
+		color: white;
+		background: linear-gradient(to right, fuchsia, purple);
+		border-radius: 6px;
+		border: none;
+		height: 35px;
+		width: 80px;
+	}
+	&:hover {
+		transform: scale(1.2, 1.2);
+	}
+}
+.botonContacto {
+	input {
+		margin-top: 25px;
+		font-family: 'Poppins', sans-serif;
+		color: white;
+		background: linear-gradient(to right, fuchsia, purple);
+		border-radius: 6px;
+		border: none;
+		height: 35px;
+		width: 100px;
+		&:hover {
+			transform: scale(1.2, 1.2);
+		}
+	}
+}
+.imgPresentacion {
+	img {
+		max-width: 500px;
+		max-height: 80vh;
+	}
+}
+.tituloServicios {
+	a {
+		&:hover {
+			display: inline-block;
+			font-size: 28px;
+			text-align: center;
+			animation: tituloservicios 1s linear;
+		}
+		text-decoration: none;
+		color: white;
+	}
+	height: 40px;
+}
+#seccionServicios {
+	padding-top: 20px;
+	text-align: center;
+}
+#menuServicios {
+	border-bottom: 2px solid white;
+	color: white;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	padding-bottom: 20px;
+	padding-top: 20px;
+}
+.dg {
+	a {
+		text-decoration: none;
+		color: cyan;
+	}
+	ul {
+		list-style: none;
+		color: white;
+		padding: 0px;
+		font-size: 12px;
+	}
+}
+.ilus {
+	ul {
+		list-style: none;
+		color: white;
+		padding: 0px;
+		font-size: 12px;
+	}
+	a {
+		color: fuchsia;
+		text-decoration: none;
+	}
+}
+.dd {
+	ul {
+		list-style: none;
+		color: white;
+		padding: 0px;
+		font-size: 12px;
+	}
+	a {
+		color: #6e49c2;
+		text-decoration: none;
+	}
+}
+.logoFooter {
+	padding-top: 50px;
+	text-align: center;
+	color: white;
+	padding-bottom: 50px;
+	img {
+		&:hover {
+			animation: logofooter 1s linear;
+		}
+	}
+}
+#fondoRetrato {
+	background-image: url('../multimedia/retrato.jpeg');
+	height: 600px;
+	width: 100%;
+	background-size: cover;
+}
+.titularRetrato {
+	font-weight: bold;
+	text-align: left;
+	padding-right: 100px;
+	padding-top: 100px;
+	font-size: 48px;
+	margin-left: 50px;
+	transition: color .5s, font-size 1s;
+	&:hover {
+		color: #E7038E;
+		font-size: 50px;
+	}
+}
+.textoRetrato {
+	text-align: left;
+	padding-right: 2500;
+	font-size: 24px;
+	margin-left: 50px;
+	margin-right: 550px;
+}
+.textoRetrato-box {
+	animation-name: slidetexto;
+	animation-duration: 3s;
+	width: 100%;
+}
+.titularContacto {
+	font-size: 28px;
+	text-align: center;
+	color: white;
+	padding-top: 50px;
+	transition: color;
+	&:hover {
+		transform: scale(1.1,1.1);
+		color: fuchsia;
+	}
+}
+#cuerpoContacto {
+	padding-top: 50px;
+}
+.textoContacto {
+	font-size: 18px;
+	text-align: center;
+	color: white;
+	animation: textocontacto 2s linear;
+}
+#formularioContacto {
+	color: white;
+	text-align: center;
+	padding: 50px;
+	background: linear-gradient(to right, #6e49c2, purple);
+}
+label {
+	padding: 5px 10px 10px 10px;
+}
+.formulario {
+	background: fuchsia;
+	border: none;
+	&:hover {
+		transform: scale(1.05, 1.05);
+	}
+}
+.botonFormulario {
+	font-family: 'Poppins', sans-serif;
+	font-weight: bold;
+	color: fuchsia;
+	background: white;
+	border-radius: 6px;
+	border: none;
+	height: 35px;
+	width: 100px;
+	transition: color 1s;
+	&:hover {
+		transform: scale(1.1, 1.1);
+		color: purple;
+	}
+}
+#fondoConocenos {
+	padding: 30px 50px 50px 30px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between; width: 100vw;
+	background-color: fuchsia;
+	border-top: 30px solid black;
+}
+.vision {
+	color: white;
+	text-align: center;
+	padding: 30px 30px 30px 30px;
+	transition: color 1s;
+	&:hover {
+		color: black;
+	}
+}
+.creatividad {
+	color: white;
+	text-align: center;
+	padding: 30px 30px 30px 30px;
+	transition: color 1s;
+	&:hover {
+		color: black;
+	}
+}
+.pasion {
+	color: white;
+	text-align: center;
+	padding: 30px 30px 30px 30px;
+	transition: color 1s;
+	&:hover {
+		color: black;
+	}
+}
+.tituloVision {
+	border-right: 2px solid white;
+	padding-right: 20px;
+}
+.tituloCreatividad {
+	border-right: 2px solid white;
+	padding-right: 20px;
+}
+#fondoServicios {
+	color: white;
+	padding-top: 100px;
+	ul {
+		li {
+			display: table-row;
+			color: white;
+			text-decoration: none;
+			display: block;
+			padding: 10px 80px;
+		}
+	}
+}
+.iconoDg {
+	background-color: cyan;
+	padding-left: 500px;
+	padding-right: 500px;
+	border: 4px solid white;
+	&:hover {
+		transform: scale(1.1,1.1);
+	}
+}
+.diseñoGrafico {
+	text-decoration: none;
+	display: block;
+	text-align: center;
+}
+.iconoIlus {
+	background-color: #6e49c2;
+	padding-left: 500px;
+	padding-right: 500px;
+	border: 4px solid white;
+	&:hover {
+		transform: scale(1.1,1.1);
+	}
+}
+.ilustracion {
+	text-decoration: none;
+	display: block;
+	text-align: center;
+}
+.iconoDd {
+	background-color: fuchsia;
+	padding-left: 500px;
+	padding-right: 500px;
+	border: 4px solid white;
+	&:hover {
+		transform: scale(1.1,1.1);
+	}
+}
+.diseñoDigital {
+	text-decoration: none;
+	display: block;
+	text-align: center;
+}
+#fondoNovedades {
+	background: #6e49c2;
+	padding-top: 100px;
+}
+#imgNovedades {
+	padding-bottom: 50px;
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-template-rows: auto auto auto;
+	grid-column-gap: 10px;
+	align-items: end;
+	justify-content: space-around;
+	width: 100%;
+	height: 100%;
+}
+.imgTigre2 {
+	&:hover {
+		transform: scale(1.1,1.1);
+	}
+}
+.imgChica {
+	&:hover {
+		transform: scale(1.1,1.1);
+	}
+}
+.imgTigre1 {
+	&:hover {
+		transform: scale(1.1,1.1);
+	}
+}
+#infoNovedades {
+	border: 2px solid fuchsia;
+	background-color: fuchsia;
+	color: white;
+	padding: 20px 50px 50px 50px;
+	display: grid;
+	grid-template-rows: auto auto auto auto;
+	grid-template-columns: auto auto auto;
+	grid-template-areas: "titulo titulo titulo" "texto texto rayo" "texto texto rayo" "formulario formulario rayo";
+	justify-items: center;
+	animation: novedades 2s linear;
+}
+.textoNovedades {
+	color: white;
+	grid-area: texto;
+}
+.tituloNovedades {
+	color: white;
+	font-weight: bold;
+	grid-area: titulo;
+	transition: color 1s;
+	&:hover {
+		color: black;
+	}
+}
+#formularioNovedades {
+	color: white;
+	grid-area: formulario;
+}
+.botonNewsletter {
+	font-family: 'Poppins', sans-serif;
+	font-weight: bold;
+	color: fuchsia;
+	background: white;
+	border-radius: 6px;
+	border: none;
+	height: 20px;
+	width: 60px;
+	transition: color 1s;
+	&:hover {
+		transform: scale(1.05, 1.05);
+		color: purple;
+	}
+}
+#iconoNovedades {
+	grid-area: rayo;
+}
+#logoInsta {
+	position: fixed;
+	right: 20px;
+	top: 80%;
+	z-index: 20;
+}
+.encabezadoDg {
+	background: linear-gradient(to right, #B805F3, fuchsia);
+}
+.tituloJumbo {
+	color: white;
+	font-size: 40px;
+}
+.textoJumbo {
+	color: white;
+	font-size: 16px;
+}
+.textoDg {
+	color: white;
+	font-size: 12px;
+}
+#perros {
+	background: white;
+}
+.nombreFooter  {
+	font-family: 'Poppins', sans-serif;
+	font-size: 1.17em;
+	margin-block-start: 1em;
+	margin-block-end: 1em;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+	font-weight: bold;
+	justify-content: center;
+	
+}
+.carruselBdog {
+	height: 80%;
+	width: 50%;
+	padding-top: 5rem;
+}
+.fotosPersonajes {
+	margin-bottom: 50px;
+}
+.textoCard {
+	p {
+		font-size: 12px;
+	}
+}
+.fotoTarjeta {
+	&:hover {
+		transform: scale(1.1,1.1);
+	}
+}
+.encabezadoPsj {
+	background: linear-gradient(to right, pink, fuchsia);
+	h5 {
+		color: black;
+	}
+	p {
+		color: black;
+	}
+}
+.imgTarjetas {
+	&:hover {
+		transform: scale(1.1,1.1);
+	}
+}
+
+
+@each $fondos in retrato, background1 {
+
+   .#{$fondos}-icon {
+         background-image:
+          url(#{$fondos}.jpeg);
+    }
+
+}
+
+.retrato-icon--nuevo { @extend .retrato-icon; padding-top:30px;
+}
+
+@mixin container($ancho, $alto, $color) {
+  width: $ancho;
+  height: $alto;
+  background-color: $color;
+  border-radius: 15px;
+  text-align: center;
+  margin: auto;
+  font-family: 'Poppins', sans-serif;
+
+
+} 
+
+
+.box_dos{
+  @include container(100px, 30px, fuchsia)
+}
