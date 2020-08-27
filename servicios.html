@@ -6,20 +6,22 @@
 	<meta name="description" content="Estudio digital de ilustración y diseño, nos apasiona la creatividad, el arte, la creación de contenido, la decoración y los detalles que marcan la diferencia y te distinguen."/>
 	<meta name="keywords" content="Ilustración, Diseño gráfico, Contenido, Identidad corporativa, Personalizaciones, Detalles, Arte, Creatividad, Regalos, Personalizado, Redes sociales, Social media, Design, Diseño."/>
 	<title>Felina | Servicios</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css-1/estilo9.css">
-	<link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
-  />
+	<link rel="stylesheet" href="css-1/queries.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
 </head>
 <body id="cuerpo">
 	<header>
-			<nav>
-				<div id="menu">
-			
-					<ul>
+			<header>
+		<div class="container-fluid">
+			<nav class="navbar">
 
-						<li id= "item"> <img src="multimedia/logosinfondo.png" width="250" height="50"alt=""></li>
+				<div id="menu">
+				
+					<ul class="navbar-nav mr-auto menuNavegacion">
+						<li id= "itemLogo"> <img src="multimedia/logosinfondo.png" width="250" height="50"alt=""></li>
+
 						<li id= "item"> <a href="index.html"> INICIO </a></li>
 						<li id= "item"> <a href="servicios.html"> SERVICIOS</a>
 
@@ -37,29 +39,57 @@
 					</ul>
 				
 				</div>
+			</div>
 			</nav>
 	</header>
 
 <section id= "fondoServicios">
-	<div>
-		<ul> 
-		<li><a href="dgrafico.html"><img class= "iconoDg" src="multimedia/iconorayo.png" width="150" height="150" alt=""></a></li>
-		<li class= "diseñoGrafico"> DISEÑO GRÁFICO</li>
-		<li><a href="#"><img class= "iconoIlus" src="multimedia/iconorayo.png" width="150" height="150" alt=""></a></li>
-		<li class= "ilustracion">ILUSTRACIÓN</li>
-		<li><a href="#"><img class= "iconoDd" src="multimedia/iconorayo.png" width="150" height="150" alt=""></a></li>
-		<li class= "diseñoDigital">DISEÑO DIGITAL</li>
 
-		</ul>
-	</div>
-	
-</section>
+
+
+	<div class="jumbotron jumbotron-fluid encabezadoDg">
+  <div class="container">
+    <h5 class="display-4 tituloJumbo">SERVICIOS</h5>
+  </div>
+</div>
+
+<div class="container">
+	<div class="row">
+  <div class="col-lg-4 col-12 col-md-6">
+    <div class="card imgTarjetas imgServicios">
+    <img src="multimedia/rayovioleta.png" alt="">
+      <div class="card-body">
+        <a href="dgrafico.html" class="btn btn-primary">Diseño Gráfico</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4 col-12 col-md-6">
+    <div class="card imgTarjetas">
+    	<img src="multimedia/rayotur.png" alt="">
+      <div class="card-body">
+        <a href="#" class="btn btn-primary">Ilustración</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4 col-12 col-md-6">
+    <div class="card imgTarjetas">
+    	<img src="multimedia/rayofucsia.png" alt="">
+      <div class="card-body">
+        <a href="#" class="btn btn-primary">Diseño Digital</a>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+</div>
+
 
 <footer class= "logoFooter">
 
 	<a id= "logoInsta" href= "https://www.instagram.com/felinadigital/"> <img src="multimedia/insta.png" width="50" height="50" alt="insta"> </a>
 
-	<img src="multimedia/iso-sin-fondo.png" width="130" height="100" alt="">
+	<img src="multimedia/iso-sin-fondo.png" width="95" height="70" alt="">
 	
 	<div class= "box_dos"><h3 class= "nombreFooter">FELINA</h3></div>
 
@@ -69,4 +99,7 @@
 </footer>
 
 </body>
+
+<script src="js/bootstrap.js"></script>
+
 </html>
