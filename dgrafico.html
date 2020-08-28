@@ -14,33 +14,48 @@
 <body id="cuerpo">
 
 	<header>
-		<div class="container-fluid">
-			<nav class="navbar">
+		<div>
+				<nav class="navbar navbar-expand-lg navbar-dark style=background-color: black; menuMobile mr-auto p-2 bd-highlight">
+				  <a class="navbar-brand" href="index.html"><img src="multimedia/logosinfondo.png" width="250" height="50" alt=""></a>
+				  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	    			<span class="navbar-toggler-icon"></span>
+	  			  </button>
 
-				<div id="menu">
-				
-					<ul class="navbar-nav mr-auto menuNavegacion">
-						<li id= "itemLogo"> <img src="multimedia/logosinfondo.png" width="250" height="50"alt=""></li>
+	  <div class="collapse navbar-collapse menuMobile " id="navbarSupportedContent">
+	    <ul class="navbar-nav mr-auto d-flex justify-content-end">
+	      <li class="nav-item active p-2 bd-highlight">
+	        <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
+	      </li>
+	      <li class="nav-item dropdown p-2 bd-highlight">
+	        <a class="nav-link dropdown-toggle" href="servicios.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	          Servicios
+	        </a>
+	        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+	          <a class="dropdown-item" href="dgrafico.html">Diseño Gráfico</a>
+	          <a class="dropdown-item" href="#">Ilustración</a>
+	          <a class="dropdown-item" href="#">Diseño Digital</a>
+	        </div>
+	      </li>
+	      <li class="nav-item active p-2 bd-highlight">
+	        <a class="nav-link" href="acercade.html">Acerca De <span class="sr-only">(current)</span></a>
+	      </li>
+	      <li class="nav-item active p-2 bd-highlight">
+	        <a class="nav-link" href="contacto.html">Contacto <span class="sr-only">(current)</span></a>
+	      </li>
+	      <li class="nav-item active p-2 bd-highlight">
+	        <a class="nav-link" href="novedades.html">Novedades <span class="sr-only">(current)</span></a>
+	      </li>  
+	    </ul>
+	    	
+  <a class="nav-link" href= "https://www.instagram.com/felinadigital/"><img src="multimedia/instaBlanco.png" width="28" height="20" alt=""> <span class="sr-only">(current)</span></a>
+  <a class="nav-link" href= "https://api.whatsapp.com/send?phone=5493512615584&text=Hola!%20Me%20gustar%C3%ADa%20informaci%C3%B3n%20sobre..."><img src="multimedia/whatsapp.png" width="40" height="40" alt=""> <span class="sr-only">(current)</span></a>
+	      
+	      
+	    
+    
+  	</div>
 
-						<li id= "item"> <a href="index.html"> INICIO </a></li>
-						<li id= "item"> <a href="servicios.html"> SERVICIOS</a>
-
-							<ul id= "desple">
-								<li><a href="dgrafico.html"> DISEÑO GRÁFICO    </a></li>
-								<li><a href="#"> ILUSTRACIÓN    </a></li>
-								<li><a href="#"> DISEÑO DIGITAL    </a></li>
-							</ul>
-
-						</li>
-
-						<li id= "item"> <a href="acercade.html"> ACERCA DE </a></li>
-						<li id= "item"> <a href="contacto.html"> CONTACTO </a></li>
-						<li id= "item"> <a href="novedades.html"> NOVEDADES </a></li>
-					</ul>
-				
-				</div>
-			</div>
-			</nav>
+  </div>
 	</header>
 
 <div class="jumbotron jumbotron-fluid encabezadoDg">
@@ -110,6 +125,8 @@
 
 </body>
 
-<script src="js/bootstrap.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+<script src="js/bootstrap.bundle.js"></script>
 
 </html>

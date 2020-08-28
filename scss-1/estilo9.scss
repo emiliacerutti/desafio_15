@@ -94,49 +94,7 @@ nav {
 	text-align: center;
 	font-size: 24px;
 }
-#menu {
-	ul {
-		list-style: none;
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-		flex-wrap: nowrap;
-		align-items: center;
-		padding-right: 20px;
-		padding-left: 20px;
-	}
-	#item {
-		a {
-			background: black;
-			color: white;
-			padding: 15px 60px;
-			display: block;
-			text-decoration: none;
-			font-size: 14px;
-			&:hover {
-				background: linear-gradient(to right, #FC3AFC, #fac5be);
-			}
-		}
-		&:hover {
-			#desple {
-				display: block;
-				font-size: 10px;
-			}
-		}
-	}
-	#desple {
-		display: none;
-		position: absolute;
-		padding: 0px;
-		font-size: 10px;
-	}
-}
-#itemLogo {
-	width: 250px;
-}
-.menuHamburguesa {
-	display: none;
-}
+
 #fondo {
 	background-image: url('../multimedia/background1.jpeg');
 	background-size: cover;
@@ -657,4 +615,3 @@ label {
   @include container(100px, 30px, fuchsia)
 }
 
-.imgServicios { background: blue;}

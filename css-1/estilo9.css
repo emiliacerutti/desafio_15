@@ -76,45 +76,6 @@ nav {
     animation-iteration-count: infinite;
     animation-direction: alternate; }
 
-
-#menu {padding-top: 10px;}
-
-#menu ul {
-  list-style: none;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: nowrap;
-  align-items: center;
-  padding-right: 20px;
-  padding-left: 20px; }
-
-#menu #item a {
-  background: black;
-  color: white;
-  padding: 15px 60px;
-  display: block;
-  text-decoration: none;
-  font-size: 14px; }
-  #menu #item a:hover {
-    background: linear-gradient(to right, #FC3AFC, #fac5be); }
-
-#menu #item:hover #desple {
-  display: block;
-  font-size: 10px; }
-
-#menu #desple {
-  display: none;
-  position: absolute;
-  padding: 0px;
-  font-size: 10px; }
-
-#itemLogo {
-  width: 250px; }
-
-.menuHamburguesa {
-  display: none; }
-
 #fondo {
   background-image: url("../multimedia/background1.jpeg");
   background-size: cover;
@@ -132,6 +93,7 @@ nav {
 
 .titularFondo {
   font-weight: bold;
+  padding-right: 100px;
   padding-top: 100px;
   font-size: 30px;
   text-align: right;
@@ -162,7 +124,6 @@ nav {
   padding-right: 50px; }
 
 .presentacion {
-  padding-top: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -571,5 +532,3 @@ label {
   text-align: center;
   margin: auto;
   font-family: 'Poppins', sans-serif; }
-
-
