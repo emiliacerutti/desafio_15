@@ -12,7 +12,7 @@
 		width: 100vw;
 		}
 	
-	
+	.titularRetrato { padding-top: 30px;}
 
 	.tituloYtexto { 
 		display: flex;
@@ -22,10 +22,15 @@
 		padding-top: 20px;
 		}
 
+	.textoRetrato-box 
+		{font-size: 14px;}
+
+	#iconoNovedades { 
+		display: none;
+		}
 
 
-
-
+	#fondoNovedades {padding-top: 20px;}
 
 	.titularFondo 
 		{ 
@@ -35,6 +40,10 @@
 		display: none;
 
 		}
+
+	.tituloVision {border: none;}
+
+	.tituloCreatividad {border: none;}
 
 	.textoFondo 
 		{
@@ -66,6 +75,9 @@
 		}
 
 
+	
+
+
 }
 
 
@@ -92,6 +104,15 @@
 		align-items: flex-end;
 		padding-top: 20px;
 		}
+
+
+	.textoRetrato 
+		{font-size: 18px;
+			padding-right: 100px;
+		padding-left: 20px;}
+
+	#fondoRetrato h1 {padding-left: 40px;}
+
 
 	.titularFondo 
 		{ 

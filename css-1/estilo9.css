@@ -61,13 +61,15 @@
 img {
   max-width: 100%; }
 
-nav {
-  background-color: black;
-  position: fixed;
-  width: 100%;
-  top: 0px; }
+a .nav-animacion {
+  transition: 1s; }
+
+.nav-animacion:hover {
+  transform: scale(1.1);
+  color: fuchsia !important; }
 
 .titularPresentacion {
+  padding-top: 20px;
   text-align: center;
   font-size: 24px; }
   .titularPresentacion h2 {
@@ -229,21 +231,13 @@ nav {
 .titularRetrato {
   font-weight: bold;
   text-align: left;
-  padding-right: 100px;
   padding-top: 100px;
   font-size: 48px;
-  margin-left: 50px;
   transition: color .5s, font-size 1s; }
   .titularRetrato:hover {
     color: #E7038E;
     font-size: 50px; }
 
-.textoRetrato {
-  text-align: left;
-  padding-right: 2500;
-  font-size: 24px;
-  margin-left: 50px;
-  margin-right: 550px; }
 
 .textoRetrato-box {
   animation-name: slidetexto;
@@ -440,19 +434,7 @@ label {
   color: white;
   grid-area: formulario; }
 
-.botonNewsletter {
-  font-family: 'Poppins', sans-serif;
-  font-weight: bold;
-  color: fuchsia;
-  background: white;
-  border-radius: 6px;
-  border: none;
-  height: 20px;
-  width: 60px;
-  transition: color 1s; }
-  .botonNewsletter:hover {
-    transform: scale(1.05, 1.05);
-    color: purple; }
+
 
 #iconoNovedades {
   grid-area: rayo; }
@@ -524,11 +506,6 @@ label {
 .retrato-icon--nuevo {
   padding-top: 30px; }
 
-.box_dos {
-  width: 100px;
-  height: 30px;
-  background-color: fuchsia;
-  border-radius: 15px;
-  text-align: center;
-  margin: auto;
-  font-family: 'Poppins', sans-serif; }
+.fondoAcercaDe {padding-top: 20px;
+  display: flex;
+  justify-content: space-between;}
